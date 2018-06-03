@@ -1,7 +1,7 @@
 
-os:
-  - linux
-  - osx 
+# os:
+#   - linux
+#   - osx 
 sudo: false
 
 language: r

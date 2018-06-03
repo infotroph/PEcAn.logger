@@ -1,0 +1,16 @@
+
+os:
+  - linux
+  - osx 
+sudo: false
+
+language: r
+r:
+	- oldrel
+	- release
+	- devel
+
+cache: packages
+
+after_success:
+  - Rscript -e 'covr::codecov()'

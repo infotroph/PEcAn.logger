@@ -5,6 +5,7 @@
 sudo: false
 
 language: r
+dist: trusty
 r:
 	- oldrel
 	- release

@@ -90,7 +90,7 @@ logger.error <- function(msg, ...) {
 ##' This function will print a message and stop execution of the code. This
 ##' should only be used if the application should terminate. 
 ##' 
-##' set \code{\link{logger.setQuitOnSevere(FALSE)}}. To avoid terminating
+##' set \code{\link{logger.setQuitOnSevere}(FALSE)}. To avoid terminating
 ##' the session. This is set by default to TRUE if interactive or running
 ##' inside Rstudio.
 ##'
@@ -189,15 +189,14 @@ logger.setLevel <- function(level) {
 
 ##' Returns numeric value for string
 ##'
-##' Given the string representation this will return the numeric value
 ##' ALL   =  0
 ##' DEBUG = 10
 ##' INFO  = 20
 ##' WARN  = 30
 ##' ERROR = 40
-##' ALL   = 99
 ##'
-##' @return level the level of the message
+##' @param level string representation of a logger message level
+##' @return integer corresponding to that message level
 ##' @author Rob Kooper
 logger.getLevelNumber <- function(level) {
   if (toupper(level) == "ALL") {

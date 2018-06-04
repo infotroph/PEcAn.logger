@@ -6,11 +6,16 @@
 \usage{
 logger.getLevelNumber(level)
 }
+\arguments{
+\item{level}{string representation of logger message level}
+}
 \value{
-level the level of the message
+integer corresponding to the message level
 }
 \description{
-Given the string representation this will return the numeric value
+Returns numeric value for string
+}
+\details{
 ALL   =  0
 DEBUG = 10
 INFO  = 20
